@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% provide(:title, t(".title"))%>
+  </head>
+  <body>
+    <%= link_to "English", locale: "en" %>
+    <%= link_to "Vietnamese", locale: "vi" %>
+    <h1><%= t ".home" %></h1>
+    <p>
+      <%= t ".content_1" %>
+      <%= link_to t(".content_2"), "https://www.railstutorial.org/" %>
+      <%= t ".content_3" %>
+    </p>
+  </body>
+</html>
