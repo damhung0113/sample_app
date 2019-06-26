@@ -2,10 +2,11 @@ en:
   static_pages:
     home:
       title: Home
-      home: Sample App
+      home: Welcome to the Sample App
       content_1: This is the home page for the
       content_2: Ruby on Rails Tutorial
       content_3: sample application.
+      signup: Sign up now!
     about:
       title: About
       about: About
@@ -31,7 +32,23 @@ en:
       contact: Contact
       content_1: Contact the Ruby on Rails Tutorial about the sample app at the
       content_2: contact page.
-  hello: Hello world
+  layouts:
+    footer:
+      book: Ruby On Rails Tutorial
+      author: Michael Hartl
+      about: About
+      contact: Contact
+      new: News
+    header:
+      logo: Sample App
+      home: Home
+      help: Help
+      login: Log in
+  users:
+    new:
+      title: Sign Up
+      signup: Sign up
+      content: This will be a signup page for new users.
   english: English
   vietnam: Vietnamese
-
+  title: Ruby on Rails Tutorial Sample App
