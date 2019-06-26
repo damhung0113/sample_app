@@ -4,6 +4,8 @@
     get "/static_pages/help", to: "static_pages#help"
     get "/static_pages/about", to: "static_pages#about"
     get "/static_pages/contact", to: "static_pages#contact"
-    get "/users/signup", to: "users#new"
+    get "/users/signup",  to: "users#new"
+    post "users/signup",  to: "users#create"
+    resources :users
   end
 end
