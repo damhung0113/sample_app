@@ -1,0 +1,36 @@
+vi:
+  static_pages:
+    home:
+      title: Trang chủ
+      home: Ứng dụng mẫu
+      content_1: Đây là trang chủ
+      content_2: cho ứng dụng mẫu
+      content_3: Ruby on Rails Tutorial.
+    about:
+      title: Thông tin
+      about: Thông tin
+      content_1: Sách
+      content_2: ROR Tutorial
+      content_3: là một
+      content_4: cuốn sách
+      content_5: và
+      content_6: một danh sách
+      content_7: dạy phát triển web với
+      content_8: ROR.
+      content_9: Đây là một ứng dụng mẫu cho hướng dẫn.
+    help:
+      title: Giúp đỡ
+      help: Giúp đỡ
+      content_1: Nhận sự giúp đỡ ở trang
+      content_2: Rails Tutorial.
+      content_3: Để sự giúp đỡ về ứng dụng mẫu,
+      content_4: hãy theo dõi sách ROR
+      content_5: Tutorial
+    contact:
+      title: Về chúng tôi
+      contact: Về chúng tôi
+      content_1: Liên hệ ROR Tutorial về ứng dụng mẫu tại
+      content_2: trang chủ.
+  hello: Xin chào thế giới
+  english: Tiếng Anh
+  vietnam: Tiếng Việt
