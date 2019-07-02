@@ -31,6 +31,11 @@ vi:
       contact: Về chúng tôi
       content_1: Liên hệ ROR Tutorial về ứng dụng mẫu tại
       content_2: trang chủ.
-  hello: Xin chào thế giới
+  users:
+    new:
+      title: Đăng Nhập
+      signup: Đăng nhập
+      content: Đăng nhập người dùng tại đây.
   english: Tiếng Anh
   vietnam: Tiếng Việt
+  title: Ruby on Rails Tutorial Sample App
