@@ -39,6 +39,8 @@ en:
       about: About
       contact: Contact
       new: News
+      by: by
+      the: The
     header:
       logo: Sample App
       home: Home
@@ -49,6 +51,17 @@ en:
       title: Sign Up
       signup: Sign up
       content: This will be a signup page for new users.
+      name: Name
+      email: Email
+      password: Password
+      confirmation: Confirmation
+      create: Create my account
+  shared:
+    error_messages:
+      error: "error"
+      form_contain: "The form contains"
   english: English
   vietnam: Vietnamese
   title: Ruby on Rails Tutorial Sample App
+  success: Welcome to the Sample App!
+  error: Error
