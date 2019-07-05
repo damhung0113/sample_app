@@ -1,10 +1,14 @@
-user:
-  name:
-    max_length: 50
-  email:
-    max_length: 255
-  password:
-    min_length: 6
+models:
+  user:
+    name:
+      max_length: 50
+    email:
+      max_length: 255
+    password:
+      min_length: 6
 helpers:
   gravatar:
     size: 100
+controller:
+  sessions:
+    value: "1"
