@@ -157,3 +157,19 @@ input[type=submit] {
     color: $state-danger-text;
   }
 }
+
+.checkbox {
+  margin: -10px 0 10px;
+  input[type=checkbox] {
+    margin-left: 0px;
+  }
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+.remember_me {
+  width: auto;
+  margin-left: 0;
+}
