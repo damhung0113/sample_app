@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   before_action :find_user, except: %i(index new create)
   before_action :logged_in_user, except: %i(new create show)
+
   before_action :correct_user, only: %i(update edit)
   before_action :admin_user, only: :destroy
 

@@ -4,12 +4,12 @@ User.create!(name:  "Dam Tien Hung",
              password_confirmation: "123123",
              is_admin: true)
 
-10.times do
-  User.create([{
+30.times do |i|
+  User.create!(
     name: Faker::Name.name,
-    email: Faker::Internet.email,
-    password: Faker::Internet.password
-  }])
+    email: "sampleapp123123-#{i}@gmail.com",
+    password: "123123"
+  )
 end
 
 users = User.order(:created_at).take(6)
@@ -18,3 +18,10 @@ users = User.order(:created_at).take(6)
   content = Faker::Lorem.sentence(5)
   users.each { |user| user.microposts.create!(content: content) }
 end
+
+users = User.all
+user  = users.first
+following = users[2..50]
+followers = users[3..10]
+following.each { |followed| user.follow(followed) }
+followers.each { |follower| follower.follow(user) }

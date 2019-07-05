@@ -81,6 +81,17 @@ en:
       email: "Email Address"
       password: "Password"
       password_confirmation: "Confirmation"
+    follow:
+      follow: Follow
+    unfollow:
+      unfollow: Unfollow
+    show_follow:
+      microposts: "Microposts:"
+      view: view my profile
+  followers:
+    followers: Followers
+  following:
+    following: Following
   shared:
     error_messages:
       error: error
@@ -88,8 +99,12 @@ en:
     user_info:
       view_profile: "View my profile"
       micropost: "micropost"
-    micropost_form:
+    form:
+      post: Post
       compose: Compose new micropost...
+    stats:
+      following: following
+      followers: followers
   sessions:
     new:
       email: Email
