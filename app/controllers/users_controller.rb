@@ -12,9 +12,8 @@ class UsersController < ApplicationController
 
     if @user.save
       flash[:success] = t "success"
-      redirect_to @user
+      redirect_to login_path param: @user.email
     else
-      flash.now[:danger] = t "error"
       render :new
     end
   end
