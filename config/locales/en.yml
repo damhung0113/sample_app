@@ -61,6 +61,7 @@ en:
       password: Password
       confirmation: Confirmation
       create: Create my account
+
   shared:
     error_messages:
       error: error
@@ -74,6 +75,7 @@ en:
       password: Password
       signupnow: Sign up now!
       new_user: New_user?
+      auto_login: "Remember me on this computer"
     create:
       success: Welcome to the Sample App!
       error: Invalid email/password combination
