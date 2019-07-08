@@ -8,7 +8,9 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.page(params[:page])
+  end
 
   def index
     @users = User.order(:name).page(params[:page]).per Settings.index.per_page
