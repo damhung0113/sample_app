@@ -100,6 +100,16 @@ en:
     create:
       welcome: Welcome to %{name} the Sample App!
       error: Invalid email/password combination
+  microposts:
+    create:
+      not_save: Create Failed
+      save: Micropost created!
+    destroy:
+      delete: Delete Successfully
+      not_delete: Delete Failed
+  ActiveRecord:
+    microposts:
+      less_5mb: should be less than 5MB
   english: English
   vietnam: Vietnamese
   title: Ruby on Rails Tutorial Sample App

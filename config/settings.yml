@@ -5,8 +5,14 @@ user:
     max_length: 255
   password:
     min_length: 6
-helpers:
-  gravatar:
-    size: 100
-index:
+  helpers:
+    gravatar:
+      size: 100
+    post_per_page: 10
+  index:
     per_page: 10
+micropost:
+  content:
+    max_length: 160
+  gravatar:
+    size: 50

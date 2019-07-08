@@ -6,6 +6,7 @@ $light-gray: #777;
 $white: #fff;
 $red: red;
 $gray-white: #bbb;
+$white-gray: #e8e8e8;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -188,10 +189,11 @@ input[type=submit] {
   list-style: none;
   padding: 0;
   li {
+    border-top: 1px solid $white-gray;
+    overflow: auto;
     padding: 10px 0;
-    border-top: 1px solid #e8e8e8;
   }
-  .user {
+  .author {
     margin-top: 5em;
     padding-top: 0;
   }
@@ -203,28 +205,30 @@ input[type=submit] {
       padding: 5px 0;
     }
   }
-  .timestamp {
+  .post-time {
     color: $gray-light;
     display: block;
     margin-left: 60px;
   }
   .gravatar {
     float: left;
-    margin-right: 10px;
-    margin-top: 5px;
+    margin: 5px 10px 0 0;
   }
 }
 
-aside {
-  textarea {
-    height: 100px;
-    margin-bottom: 5px;
-  }
-}
-
-span.picture {
+ .micropost_form {
   margin-top: 10px;
-  input {
-    border: 0;
+  .post_field {
+    border: 1px solid $white-gray;
+    font-size: 15px;
+    height: 96px;
+    overflow-y: scroll;
+    resize: none;
   }
+}
+.verticalhorizontal {
+    display: block;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 8px;
 }

@@ -32,5 +32,9 @@ gem "faker", "~> 1.9", ">= 1.9.6"
 gem "jquery-rails"
 gem "kaminari", "~> 1.1", ">= 1.1.1"
 gem "rails-i18n"
+gem "carrierwave", "~> 1.3", ">= 1.3.1"
+gem "mini_magick", "~> 4.9", ">= 4.9.3"
+gem 'flex-slider-rails'
 gem "rubocop", "~> 0.54.0", require: false
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "pry-rails"

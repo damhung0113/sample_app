@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :find_user, only: %i(show edit update destroy)
-  before_action :logged_in_user, only: %i(update edit index)
+  before_action :logged_in_user, only: %i(update edit index destroy)
   before_action :correct_user, only: %i(update edit)
   before_action :admin_user, only: :destroy
 
@@ -9,11 +9,12 @@ class UsersController < ApplicationController
   end
 
   def show
-    @microposts = @user.microposts.page(params[:page])
+    @microposts = @user.microposts.sort_by_time.page(params[:page])
+      .per Settings.user.helpers.post_per_page
   end
 
   def index
-    @users = User.order(:name).page(params[:page]).per Settings.index.per_page
+    @users = User.order(:name).page(params[:page]).per Settings.user.index.per_page
   end
 
   def create
@@ -53,12 +54,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit :name, :email, :password,
       :password_confirmation
-  end
-
-  def logged_in_user
-    return if logged_in?
-    flash[:danger] = t ".login_first"
-    redirect_to login_path
   end
 
   def admin_user

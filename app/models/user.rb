@@ -48,6 +48,10 @@ class User < ApplicationRecord
     update remember_digest: nil
   end
 
+  def feed
+    Micropost.where("user_id = ?", id)
+  end
+
   private
 
   def email_downcase
