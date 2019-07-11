@@ -52,6 +52,7 @@ en:
       profile: Profile
       settings: Settings
   users:
+    login_first: "Please login before update your information"
     new:
       title: Sign Up
       signup: Sign up
@@ -61,7 +62,27 @@ en:
       password: Password
       confirmation: Confirmation
       create: Create my account
-
+    update:
+      success: Update successfully
+      error: Update Error
+    create:
+      success: You registered successfully!
+    destroy:
+      delete_done: Delete successfully
+      delete_failed: Delete Failed
+    index:
+      delete: "Delete"
+      sure: "Are you sure?"
+      title: All users
+      all_users: All Users
+    edit:
+      title: Edit user
+      name: Name
+      email: Email
+      password: Password
+      confirmation: Confirmation
+      save: Save changes
+      update_profile: Update your profile
   shared:
     error_messages:
       error: error
@@ -75,11 +96,10 @@ en:
       password: Password
       signupnow: Sign up now!
       new_user: New_user?
-      auto_login: "Remember me on this computer"
+      auto_login: Remember me on this computer
     create:
-      success: Welcome to the Sample App!
+      welcome: Welcome to %{name} the Sample App!
       error: Invalid email/password combination
   english: English
   vietnam: Vietnamese
   title: Ruby on Rails Tutorial Sample App
-  success: You registered successfully!

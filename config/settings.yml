@@ -12,3 +12,5 @@ helpers:
 controller:
   sessions:
     value: "1"
+index:
+    per_page: 10

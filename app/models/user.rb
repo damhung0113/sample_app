@@ -5,6 +5,7 @@ class User < ApplicationRecord
   before_save :email_downcase
   has_secure_password
 
+  scope :sort_by_name, ->{order :name}
   validates :name, presence: true,
     length: {maximum: Settings.models.user.name.max_length}
   validates :email, presence: true,
@@ -12,7 +13,7 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX},
     uniqueness: {case_sensitive: false}
   validates :password, presence: true,
-    length: {minimum: Settings.models.user.password.min_length}
+    length: {minimum: Settings.models.user.password.min_length}, allow_nil: true
 
   class << self
     def digest string

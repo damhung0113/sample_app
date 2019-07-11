@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
     user = User.find_by email: get_session_email
 
     if user&.authenticate(params[:session][:password])
-      flash[:success] = t ".welcome"
+      flash[:success] = t ".welcome", name: user.name
       log_in user
       check_session_remember ? remember(user) : forget(user)
       redirect_to user
