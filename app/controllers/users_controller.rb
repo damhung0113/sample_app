@@ -8,10 +8,14 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.sort_by_time.page(params[:page])
+                       .per Settings.user.helpers.post_per_page
+  end
 
   def index
-    @users = User.sort_by_name.page(params[:page]).per Settings.index.per_page
+    @users = User.sort_by_name.page(params[:page])
+                 .per Settings.user.index.per_page
   end
 
   def create
@@ -51,12 +55,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit :name, :email, :password,
       :password_confirmation
-  end
-
-  def logged_in_user
-    return if logged_in?
-    flash[:danger] = t ".login_first"
-    redirect_to login_path
   end
 
   def admin_user

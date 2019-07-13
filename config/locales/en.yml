@@ -7,6 +7,7 @@ en:
       content_2: Ruby on Rails Tutorial
       content_3: sample application.
       signup: Sign up now!
+      title_feed: Micropost Feed
     about:
       title: About
       about: About
@@ -57,11 +58,7 @@ en:
       title: Sign Up
       signup: Sign up
       content: This will be a signup page for new users.
-      name: Name
-      email: Email
-      password: Password
-      confirmation: Confirmation
-      create: Create my account
+      btn_create: Create my account
     update:
       success: Update successfully
       error: Update Error
@@ -77,16 +74,22 @@ en:
       all_users: All Users
     edit:
       title: Edit user
-      name: Name
-      email: Email
-      password: Password
-      confirmation: Confirmation
-      save: Save changes
+      btn_save: Save changes
       update_profile: Update your profile
+    form:
+      name: "Full Name"
+      email: "Email Address"
+      password: "Password"
+      password_confirmation: "Confirmation"
   shared:
     error_messages:
       error: error
       form_contain: The form contains
+    user_info:
+      view_profile: "View my profile"
+      micropost: "micropost"
+    micropost_form:
+      compose: Compose new micropost...
   sessions:
     new:
       email: Email
@@ -100,6 +103,24 @@ en:
     create:
       welcome: Welcome to %{name} the Sample App!
       error: Invalid email/password combination
+  microposts:
+    create:
+      not_save: Create Failed
+      save: Micropost created!
+    destroy:
+      delete: Delete Successfully
+      not_delete: Delete Failed
+    micropost:
+      delete: Delete
+      posted: Posted
+      ago: ago.
+  ActiveRecord:
+    microposts:
+      less_5mb: should be less than 5MB
   english: English
   vietnam: Vietnamese
   title: Ruby on Rails Tutorial Sample App
+  error_picture: should be less than %{size}MB
+  picture_size: Maximum file size is %{size}MB. Please choose a smaller file.
+  error_exist: or content must exist!
+  confirm: You sure?
