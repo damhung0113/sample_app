@@ -34,6 +34,7 @@ gem "i18n-js"
 gem "jquery-rails"
 gem "kaminari", "~> 1.1", ">= 1.1.1"
 gem "mini_magick", "~> 4.9", ">= 4.9.3"
+gem "pry", "~> 0.12.2"
 gem "rails-i18n"
 gem "rubocop", "~> 0.54.0", require: false
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]

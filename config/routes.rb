@@ -12,7 +12,14 @@
     delete "/logout", to: "sessions#destroy"
     get "/microposts", to: redirect("/static_pages/home")
     resources :users
+    resources :users do
+        member do
+            resources :following, only: :index
+            resources :followers, only: :index
+        end
+    end
     resources :sessions, only: %i(new create destroy)
     resources :microposts
+    resources :relationships, only: %i[create destroy]
   end
 end
