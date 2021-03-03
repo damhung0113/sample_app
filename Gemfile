@@ -27,7 +27,7 @@ end
 gem "bcrypt", "3.1.12"
 gem "bootstrap-kaminari-views", "~> 0.0.5"
 gem "bootstrap-sass", "3.3.7"
-gem "carrierwave", "~> 1.3", ">= 1.3.1"
+gem "carrierwave", "~> 1.3"
 gem "config"
 gem "faker", "~> 1.9", ">= 1.9.6"
 gem "i18n-js"
